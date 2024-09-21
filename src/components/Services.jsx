@@ -1,7 +1,9 @@
-import React from 'react';
+const Services = () => {
+  return (
+    <div id="services" className="h-[100vh]">
+      services
+    </div>
+  );
+};
 
-export default function Services() {
-    return (
-        <div></div>
-    )
-}
+export default Services;

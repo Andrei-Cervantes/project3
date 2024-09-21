@@ -1,7 +1,9 @@
-import React from 'react';
+const AboutUs = () => {
+  return (
+    <div id="about" className="h-[100vh]">
+      AboutUs
+    </div>
+  );
+};
 
-export default function AboutUs() {
-    return (
-        <div></div>
-    )
-}
+export default AboutUs;

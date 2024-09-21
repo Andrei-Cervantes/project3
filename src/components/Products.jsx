@@ -1,7 +1,9 @@
-import React from 'react';
+const Products = () => {
+  return (
+    <div id="products" className="h-[100vh]">
+      Products
+    </div>
+  );
+};
 
-export default function Products() {
-    return (
-        <div></div>
-    )
-}
+export default Products;
