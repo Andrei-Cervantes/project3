@@ -3,11 +3,11 @@ import { Mail, Facebook, PhoneCall } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="text-white">
-      <div className="bg-primary flex justify-around p-10">
+    <div className="text-white text-[24px]">
+      <div className="bg-primary flex justify-around items-start p-10 pb-[150px]">
         <img src={logo} />
-        <div>
-          <ul>
+        <div className="max-w-[166px]">
+          <ul className="flex flex-col gap-4">
             <li>
               <a href="#">Home</a>
             </li>
@@ -25,17 +25,17 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div>
-          <div className="flex flex-row gap-2">
-            <Facebook />
+        <div className="flex gap-4 flex-col max-w-[475px]">
+          <div className="flex flex-row gap-4">
+            <Facebook size={40} />
             Stema Fabricated Metals Manufacturing
           </div>
-          <div className="flex flex-row gap-2">
-            <Mail />
+          <div className="flex flex-row gap-4">
+            <Mail size={40} />
             samplesalesemail@gmail.com
           </div>
-          <div className="flex flex-row gap-2">
-            <PhoneCall />
+          <div className="flex flex-row gap-4">
+            <PhoneCall size={40} />
             (0912) 345 6789
           </div>
         </div>
