@@ -41,11 +41,11 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-footer flex justify-between p-[30px] oxygen">
-        <p>
+        <p className="text-[20px]">
           Copyright &copy; {new Date().getFullYear()} Stema Fabricated Metals
           Manufacturing. All Rights Reserved
         </p>
-        <p>Hire Developers</p>
+        <p className="text-[20px]">Hire Developers</p>
       </div>
     </div>
   );

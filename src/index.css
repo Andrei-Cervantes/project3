@@ -9,14 +9,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.oxygen {
-  font-family: "Oxygen", sans-serif;
-}
-
-.oswald {
-  font-family: "Oswald", sans-serif;
-}
-
 .custom-gradient {
   background-image: linear-gradient(
     to bottom right,

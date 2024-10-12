@@ -8,6 +8,10 @@ export default {
         secondary: "#1B1925",
         footer: "#1B1925",
       },
+      fontFamily: {
+        oxygen: ["Oxygen", "sans-serif"],
+        oswald: ["Oswald", "sans-serif"],
+      },
     },
   },
   plugins: [],
