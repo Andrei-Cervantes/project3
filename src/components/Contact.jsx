@@ -7,7 +7,7 @@ const Contact = () => {
       </h1>
       <div className="bg-primary text-white p-[60px] flex justify-center gap-7">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.10585443831!2d121.06843577457475!3d14.706605374473645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaec5cf1db9253d97%3A0x3aa4d6ce71cfe84a!2sThe%20Medical%20Avenue!5e0!3m2!1sen!2sph!4v1716361939097!5m2!1sen!2sph"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d482.37811438818574!2d121.0552399423561!3d14.7111831299048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b0ed2145f7fb%3A0xcdcb8a402a3ea289!2s19%2C%20215%20Dollar%2C%20Novaliches%2C%20Quezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1728916622156!5m2!1sen!2sph"
           width="463"
           height="560"
           allowfullscreen=""
@@ -18,8 +18,7 @@ const Contact = () => {
         <div className="flex flex-col justify-between gap-5">
           <div className="flex justify-between gap-5">
             <p className="text-[28px] max-w-[380px]">
-              123 Medical Avenue, Barangay Health Center, Metroville City, Metro
-              Manila, Philippines
+              Lot 19-B, Blk 215, Dollar St. North Fairview, Quezon City
             </p>
             <div className="max-w-[300px]">
               <div>

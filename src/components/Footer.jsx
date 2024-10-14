@@ -32,20 +32,22 @@ const Footer = () => {
           </div>
           <div className="flex flex-row gap-4">
             <Mail size={40} />
-            samplesalesemail@gmail.com
+            <a href="mailto:stemasteel@yahoo.com">stemasteel@yahoo.com</a>
           </div>
           <div className="flex flex-row gap-4">
             <PhoneCall size={40} />
-            (0912) 345 6789
+            <div className="flex flex-col">
+              <p>(0917) 875 2044</p>
+              <p>(0998) 850 4201</p>
+            </div>
           </div>
         </div>
       </div>
-      <div className="bg-footer flex justify-between p-[30px] oxygen">
+      <div className="bg-footer p-[30px] oxygen">
         <p className="text-[20px]">
           Copyright &copy; {new Date().getFullYear()} Stema Fabricated Metals
           Manufacturing. All Rights Reserved
         </p>
-        <p className="text-[20px]">Hire Developers</p>
       </div>
     </div>
   );
