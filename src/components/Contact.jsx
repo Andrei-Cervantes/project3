@@ -24,11 +24,11 @@ const Contact = () => {
             <div className="max-w-[300px]">
               <div>
                 <p className="font-light text-lg">Cellphone Number:</p>
-                <p className="text-[28px]">(0912) 345 6789</p>
+                <p className="text-[28px]">(0917) 875 2044</p>
               </div>
               <div>
-                <p className="font-light text-lg">Telephone:</p>
-                <p className="text-[28px]">(02) 123 4567</p>
+                <p className="font-light text-lg">Cellphone Number:</p>
+                <p className="text-[28px]">(0998) 850 4201</p>
               </div>
             </div>
           </div>
@@ -36,9 +36,7 @@ const Contact = () => {
             <div>
               <p className="font-light text-lg">Email:</p>
               <p className="text-[28px] hover:underline">
-                <a href="mailto:samplesalesemail@gmail.com">
-                  samplesalesemail@gmail.com
-                </a>
+                <a href="mailto:stemasteel@yahoo.com">stemasteel@yahoo.com</a>
               </p>
             </div>
             <div>
