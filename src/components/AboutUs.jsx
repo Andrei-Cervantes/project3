@@ -5,7 +5,7 @@ const AboutUs = () => {
         About Us
       </h1>
       <div className="flex gap-5">
-        <div className="custom-gradient w-full max-w-[255px] rounded-r-3xl" />
+        <div className="custom-gradient w-full max-w-[255px] rounded-r-3xl hidden md:block" />
         <div className="bg-primary text-white p-10 rounded-l-3xl">
           <h1 className="font-oswald text-[40px] font-semibold max-w-[700px]">
             WHO WE ARE
@@ -33,10 +33,10 @@ const AboutUs = () => {
             practices in our industry.
           </p>
         </div>
-        <div className="custom-gradient w-full max-w-[255px] rounded-l-3xl" />
+        <div className="custom-gradient w-full max-w-[255px] rounded-l-3xl hidden md:block" />
       </div>
       <div className="flex gap-5">
-        <div className="custom-gradient w-full max-w-[255px] rounded-r-3xl" />
+        <div className="custom-gradient w-full max-w-[255px] rounded-r-3xl hidden md:block" />
         <div className="bg-primary text-white p-10 rounded-l-3xl">
           <h1 className="font-oswald text-[40px] font-semibold max-w-[700px]">
             VISION

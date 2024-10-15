@@ -2,9 +2,9 @@ import logo from "../assets/logo.svg";
 
 const Navbar = () => {
   return (
-    <div className="flex flex-row justify-around items-center py-10">
+    <div className="flex flex-col md:flex-row justify-around gap-5 items-center py-10">
       <img src={logo} className="w-[200px]" />
-      <ul className="flex flex-row gap-5 text-white bg-primary p-6 rounded-3xl">
+      <ul className="flex flex-col md:flex-row gap-5 text-white bg-primary p-6 rounded-3xl">
         <li>
           <a className="text-[20px] font-semibold" href="#">
             HOME

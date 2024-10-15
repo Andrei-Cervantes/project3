@@ -72,7 +72,7 @@ const ReviewCard = ({ img, name, username, body }) => {
 const Products = () => {
   return (
     <div id="products" className="">
-      <div className="flex justify-center items-center gap-10 p-5">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 p-5">
         <h1 className="font-semibold text-primary text-[70px]">Products</h1>
         <p className="text-[24px] font-light max-w-[587px]">
           In 2008, we established our first flagship showroom and distribution
