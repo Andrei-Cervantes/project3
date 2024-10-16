@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import Products from "../components/Products";
-import Services from "../components/services";
+import Services from "../components/Services";
 
 const Home = () => {
   return (
