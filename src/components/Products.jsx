@@ -2,69 +2,104 @@
 import { cn } from "../lib/utils";
 import Marquee from "./ui/Marguee";
 
+import grating from "../assets/products/Grating.jpg";
+import couplers from "../assets/products/Rebar_Couplers.jpg";
+import fabrication from "../assets/products/Rebar_Fabrication.jpg";
+import mesh from "../assets/products/Rebar_Mesh.jpg";
+import reinforce from "../assets/products/Reinforce.jpg";
+import stairs from "../assets/products/Stairs.jpg";
+import beams from "../assets/products/Steel_Beams.jpeg";
+import columns from "../assets/products/Steel_Columns.jpg";
+import frames from "../assets/products/Steel_Frames.jpg";
+import trusses from "../assets/products/Trusses.png";
+
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
-    img: "https://avatar.vercel.sh/jack",
+    title: "Rebar Fabrication",
+    description:
+      "Custom-cut and bent rebar for reinforced concrete applications, tailored to project specifications.",
+    img: fabrication,
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
-    img: "https://avatar.vercel.sh/jill",
+    title: "Rebar Couplers",
+    description:
+      "High-strength mechanical connectors designed to join rebar lengths seamlessly, enhancing structural integrity.",
+    img: couplers,
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/john",
+    title: "Rebar Mesh",
+    description:
+      "Prefabricated welded wire mesh for flooring and wall reinforcement, available in various sizes and configurations.",
+    img: mesh,
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jane",
+    title: "Steel Frames",
+    description:
+      "Prefabricated steel frames for buildings and structures, offering strength and versatility for construction projects.",
+    img: frames,
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/jenny",
+    title: "Steel Columns",
+    description:
+      "Custom-fabricated steel columns designed to support heavy loads in commercial and industrial applications.",
+    img: columns,
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I'm at a loss for words. This is amazing. I love it.",
-    img: "https://avatar.vercel.sh/james",
+    title: "Steel Beams",
+    description:
+      "High-quality steel beams fabricated for structural support, available in various grades and dimensions.",
+    img: beams,
+  },
+  {
+    title: "Steel Trusses",
+    description:
+      "Prefabricated steel trusses for roofs and bridges, engineered for optimal load distribution and durability.",
+    img: trusses,
+  },
+  {
+    title: "Reinforcement Cages",
+    description:
+      "Ready-to-install rebar cages for columns and foundations, ensuring quick and efficient placement on site.",
+    img: reinforce,
+  },
+  {
+    title: "Steel Stairs and Handrails",
+    description:
+      "Custom-designed steel stairs and handrails for commercial and industrial facilities, ensuring safety and compliance.",
+    img: stairs,
+  },
+  {
+    title: "Steel Grating",
+    description:
+      "Durable steel grating for walkways and platforms, providing strength and slip resistance in various environments.",
+    img: grating,
   },
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
+const firstRow = reviews.slice(0, reviews.length);
 
-const ReviewCard = ({ img, name, username, body }) => {
+const ReviewCard = ({ title, description, img }) => {
   return (
     <figure
       className={cn(
-        "relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4",
+        "relative w-[400px] cursor-pointer overflow-hidden rounded-xl border p-4",
         // light styles
         "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
         // dark styles
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
       )}
     >
-      <div className="flex flex-row items-center gap-2">
-        <img className="rounded-full" width="32" height="32" alt="" src={img} />
-        <div className="flex flex-col">
-          <figcaption className="text-sm font-medium dark:text-white">
-            {name}
-          </figcaption>
-          <p className="text-xs font-medium dark:text-white/40">{username}</p>
+      <div className="flex flex-row items-start gap-2 p-4 min-h-[120px]">
+        <div className="">
+          <figcaption className="text-lg font-bold">{title}</figcaption>
+          <blockquote className="mt-2 text-sm">{description}</blockquote>
         </div>
       </div>
-      <blockquote className="mt-2 text-sm">{body}</blockquote>
+      <img
+        className="rounded-lg w-full h-[200px] object-cover object-center"
+        alt=""
+        src={img}
+      />
     </figure>
   );
 };
@@ -74,21 +109,21 @@ const Products = () => {
     <div id="products" className="">
       <div className="flex flex-col md:flex-row justify-center items-center gap-10 p-5">
         <h1 className="font-semibold text-primary text-[70px]">Products</h1>
-        <p className="text-[24px] font-light max-w-[587px]">
-          In 2008, we established our first flagship showroom and distribution
-          center in the heart of Metroville City, marking a significant
-          milestone in our journey towards becoming a trusted leader in the
-          healthcare sector.
+        <p className="text-[24px] font-light max-w-[800px]">
+          At Stema, we offer a diverse range of fabricated metal products
+          designed for various industries, including precision-cut components,
+          custom assemblies, and specialized solutions. Utilizing advanced
+          technologies like CNC machining and laser cutting, our
+          products—ranging from structural steel components to intricate
+          brackets—are engineered for durability and performance. Whether you
+          need large-scale production or custom prototypes, Stema is dedicated
+          to delivering innovative metal solutions that drive your
+          project&apos;s success.
         </p>
       </div>
-      <div className="relative flex h-[500px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
-        <Marquee pauseOnHover className="[--duration:20s]">
+      <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+        <Marquee pauseOnHover className="[--duration:50s]">
           {firstRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
-          ))}
-        </Marquee>
-        <Marquee reverse pauseOnHover className="[--duration:20s]">
-          {secondRow.map((review) => (
             <ReviewCard key={review.username} {...review} />
           ))}
         </Marquee>
